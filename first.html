@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function doSomething() {
+            sn = document.getElementById("SN").value
+            alert('Вы получили ' + sn + ' пончик');
+        }
+    </script>
+</head>
+
+<body>
+    <form onsubmit="doSomething()">
+        <p><i>Какой вы пончик?</i></p>
+        <input type="text" placeholder="Вид пончика" id="SN">
+        <input type="submit" value="Получить пончик">
+    </form>
+</body>
+
+</html>

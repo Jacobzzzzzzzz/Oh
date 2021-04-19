@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function countYears() {
+            n = document.getElementById("years").value
+            alert('Шаман говорит, что вам ' +  Number(n) + " годиков");
+        }
+        function getposhapke() {
+            alert('Вы получили по шапке');
+        }
+    </script>
+</head>
+
+<body>
+    <form onsubmit="countYears()" style="margin-top: 50px;">
+        <p><i>Сколько вам лет?</i></p>
+        <input type="text" placeholder="Количество лет" id="years">
+        <input type="submit" value="Спросить шамана">
+    </form>
+
+    <form onsubmit="getposhapke()" style="margin-top: 50px;">
+        <p><i>Получить по шапке</i></p>
+        <input type="submit" value="Ну давай, давай нападай">
+    </form>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script>
+        var myVar = setInterval(function () {
+            document.getElementById("clock").innerHTML = (new Date()).toLocaleTimeString();
+        }, 1000);
+    </script>
+</head>
+
+<body>
+    <h1 align="left">Тики-так, тики-так – нам без часиков никак.</h1>
+    <p align="left" id="clock"></p>
+    <p align="left"><button onclick="alert((new Date()).toLocaleTimeString())">(Не) Точное время</button></p>
+</body>
+
+</html>
