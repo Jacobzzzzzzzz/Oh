@@ -3,28 +3,35 @@
 
 <head>
     <script>
-        function countYears() {
-            n = document.getElementById("years").value
-            alert('Шаман говорит, что вам ' +  Number(n) + " годиков");
-        }
         function getposhapke() {
-            alert('Вы получили по шапке');
+            alert('Спасибо за ответ');
+        }
+    </script>
+    <script>
+        function getposhapkexx() {
+            alert('Только не говорите, что выбрали Рафаэля');
         }
     </script>
 </head>
 
 <body>
-    <form onsubmit="countYears()" style="margin-top: 50px;">
-        <p><i>Сколько вам лет?</i></p>
-        <input type="text" placeholder="Количество лет" id="years">
-        <input type="submit" value="Спросить шамана">
-    </form>
+  <form onsubmit="getposhapke()" style="margin-top: 50px;">
+<p><b>Как вы относитесь к власти?</b></p>
+<p><input type="radio" name="answer" value="a1">Положительно<Br>
+<input type="radio" name="answer" value="a2">Крайне положительно<Br>
+<input type="radio" name="answer" value="a3">Я к ней не отношусь</p>
+<p><input type="submit"></p>
+</form>
 
-    <form onsubmit="getposhapke()" style="margin-top: 50px;">
-        <p><i>Получить по шапке</i></p>
-        <input type="submit" value="Ну давай, давай нападай">
-    </form>
-
+<form onsubmit="getposhapkexx()" style="margin-top: 50px;">
+  <p><select name="select" size="3" multiple>
+   <option selected value="s1">Рафаэль</option>
+   <option value="s2">Леонардо</option>
+   <option value="s3">Микеланджело</option>
+   <option value="s4">Донателло</option>
+  </select>
+  <input type="submit" value="Отправить"></p>
+ </form>
 
 
 </body>
